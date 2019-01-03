@@ -183,6 +183,82 @@ def ex034_4_greet():
 
 
 
+print("CHAPTER 4 EXCERCISES [04-1] : pg.77")
+
+def int_div(num1, num2):
+    print("Division: ", num1 // num2)
+    print("Remainder: ", num1 % num2)
+
+def bet_sum(num1, num2):
+    sum = 0
+    for i in range(num1+1, num2):
+        sum += i
+    print(sum)
+
+
+#int_div(5,2)
+#bet_sum(2,5)
+#bet_sum(1,5)
+
+
+
+print("CHAPTER 5 EXCERCISES [05-1] : pg.87")
+
+def ex051_1():
+    st = [1,2,3,4]
+    print(st[0], st[1], st[2], st[3])
+
+def ex051_1_OR():
+    st = [1,2,3,4]
+    for i in st:
+        x = st[i-1] # Without '-1', you get 'out of range' error.
+        print(x)
+
+def ex051_2():
+    st = [1,2,3,4]
+    print(st[-1], st[-2], st[-3], st[0])
+
+def ex051_3():
+    st = [1,2,3,4]
+    st[0] += 1
+    st[1] += 1
+    st[2] += 1
+    st[3] += 1
+    print(st)
+
+def ex051_4():
+    st = [1,2,3,4,5,6,7,8,9,10]
+    incr = []
+    for i in st:
+        incr += [i+1]
+        print(incr)
+
+def ex051_4_OR():
+    st = [1,2,3,4,5,6,7,8,9,10]
+    for i in range(10):
+        st[i] += 1
+        print(st)
+
+def ex051_5():
+    st = [1,2,3,4,5,6]
+    st[0], st[-1] = st[-1], st[0]
+    print(st)
+
+#ex051_1()
+#ex051_1_OR()
+#ex051_2()
+#ex051_3()
+#ex051_4()
+#ex051_4_OR()
+#ex051_5()
+
+
+
+
+
+
+
+
 
 
 
