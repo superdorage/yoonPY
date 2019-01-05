@@ -297,6 +297,91 @@ def ex052_6():
 
 
 
+print("CHAPTER 5 EXCERCISES [05-3] : pg.98")
+
+def ex053():
+    str = "Hello"
+    str += "Python"
+    print(str)
+
+#ex053()
+
+
+
+print("CHAPTER 5 EXCERCISES [05-4] : pg.102")
+
+def ex054_1(li):
+    sum = li
+    num = 0
+    for i in sum:
+        num += i
+    print(num)
+
+def ex052_2(li):
+    reverse = li
+    re = []
+    for i in reverse:
+        re[:-len(reverse)] += [i]
+    print(re)
+
+
+#ex054_1([1,2,3,4,5])
+#ex052_2([1,2,3,4,5])
+#ex052_2("ABCDEFG")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
