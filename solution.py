@@ -324,14 +324,89 @@ def ex052_2(li):
         re[:-len(reverse)] += [i]
     print(re)
 
+def ex052_2_OR(li):
+    reverse = li
+    re = []
+    for i in reverse:
+        re[:-len(reverse)] += [i]
+    for i in re:
+        print(i, end=' ')
 
 #ex054_1([1,2,3,4,5])
 #ex052_2([1,2,3,4,5])
 #ex052_2("ABCDEFG")
 
+#ex052_2_OR([1,2,3,4,5])
+#ex052_2_OR("ABCDEFG")
 
 
 
+print("CHAPTER 6 EXCERCISES [06-1] : pg.108")
+
+def ex061_1():
+    st = []
+    st.append(1)
+    print(st)
+    st.append(2)
+    print(st)
+    st.append(3)
+    print(st)
+    st.remove(1)
+    print(st)
+    st.remove(2)
+    print(st)
+    st.remove(3)
+    print(st)
+
+def ex061_2():
+    st = []
+    st.append(1)
+    print(st)
+    st.append(2)
+    print(st)
+    st.append(3)
+    print(st)
+    st.remove(3)
+    print(st)
+    st.remove(2)
+    print(st)
+    st.remove(1)
+    print(st)
+
+def ex061_3():
+    st = [1,2,3,4]
+    st.clear()
+    print(st)
+    st2 = [1,2,3,4]
+    st = []
+    print(st)
+
+def ex061_4():
+    st = []
+    for i in range(1,11):
+        st.append(i)
+        print(st)
+    
+    for n in range(1,11):
+        st.remove(n)
+        print(st)
+
+def ex061_5():
+    st = []
+    for i in range(1,11):
+        st.append(i)
+        print(st)
+    
+    for n in range(1,11):
+        st.remove(st[-1])
+        print(st)
+
+
+ex061_1()
+ex061_2()
+ex061_3()
+ex061_4()
+ex061_5()
 
 
 
