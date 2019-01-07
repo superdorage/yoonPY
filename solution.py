@@ -401,74 +401,148 @@ def ex061_5():
         st.remove(st[-1])
         print(st)
 
+def ex061_6():
+    st = [1,2]
+    st.extend([3,4,5])
+    print(st)
+
+    st2 = [1,2]
+    st2[3:6] = [3,4,5]
+    print(st2)
+
+
+#ex061_1()
+#ex061_2()
+#ex061_3()
+#ex061_4()
+#ex061_5()
+#ex061_6()
 
-ex061_1()
-ex061_2()
-ex061_3()
-ex061_4()
-ex061_5()
+
 
+print("CHAPTER 6 EXCERCISES [06-2] : pg.115")
 
+def ex062_1():
+    str = "The Espresso Spirit"
+    print("\n", str.upper(), "\n", str.lower(), "\n", str)
 
+def ex062_2():
+
+    def birth_only(nums):
+        return nums[:6]
+        
+    def digit_only(nums):
+        return nums[-7:]
+    
+    p1 = "950609-2011323"
+    
+    print(birth_only(p1))
+    print(digit_only(p1))
+    
+#ex062_1()
+#ex062_2()
 
+
 
+print("CHAPTER 7 EXCERCISES [07-1] : pg.136")
 
+def ex071_1():
+    def main():
+        integer = eval(input("Enter a number: "))
+        if integer >= 0:
+            print("The number you've entered is either bigger than 0 or equal to 0")
+        else:
+            print("The number you've entered is below ZERO")
 
+    main()
 
+def ex071_2():
+    num = 3
+    1 < num and 5 > num
+    print(bool(num))
 
+def ex071_3():
+    num  = 12
+    3 < num > 10
+    print(bool(num))
 
+def ex071_4():
+    num = 4
+    num % 2 == 0 and not num % 3 == 0
+    print(bool(num))
 
+def ex071_5():
+    def main():
+        num = eval(input("Enter a number: "))
+        if num < 0:
+            print("The number you've entered is below ZERO")
+        if 0 <= num <= 10:
+            print("The number you've entered is above ZERO and below 10")
+        if 10 <= num <= 20:
+            print("The number you've entered is above 10 and below 20")
+        if 20 < num:
+            print("The number you've entered is over 20")
+    
+    main()
 
+#ex071_1()
+#ex071_2()
+#ex071_3()
+#ex071_4()
+#ex071_5()
 
 
 
+print("CHAPTER 7 EXCERCISES [07-2] : pg.144")
 
+def ex072():
+    def main():
+        num = eval(input("Enter a number: "))
+        
+        if int(num) < num:
+            print("Enter a number without decimal")
 
+        else:
+            num = num ** 2
+            print(num)
+    main()
 
+#ex072()
 
 
 
+print("CHAPTER 8 EXCERCISES [08-1] : pg.156") 
 
+def ex081_1():
+    num = 0
+    while num < 10:
+        print(num)
+        num += 1
 
+def ex081_2():
+    num = 9
+    while num > -1:
+        print(num)
+        num -= 1
 
+def ex081_3():
+    num = 0
+    while (3 * num / 2) != 63:
+        num += 1
+    print(num)
 
+#ex081_1()
+#ex081_2()
+#ex081_3()
 
 
+"""
+print("CHAPTER 8 EXCERCISES [08-2] : pg.158")
 
+def ex082_1():
+    lcm = 0
+    while   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    print(lcm)
+"""
 
