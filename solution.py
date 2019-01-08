@@ -536,13 +536,100 @@ def ex081_3():
 #ex081_3()
 
 
-"""
-print("CHAPTER 8 EXCERCISES [08-2] : pg.158")
 
-def ex082_1():
-    lcm = 0
-    while   
+print("CHAPTER 8 EXCERCISES [08-2] : pg.159")
 
-    print(lcm)
-"""
+def ex082_1(num1, num2):            #최소공배수
+
+    if num1 == 0 or num2 == 0:
+        print("Piss off")
+
+    elif num1 == num2:
+        print("\nThey are the same. WTH is wrong with you?\n", num1, num2)
+
+    elif num1 or num2 != 0:
+        if num1 > num2:
+            num1, num2 = num2, num1
+
+        const_num = num2
+
+        while num2 % num1 != 0:
+            num2 += const_num
+        print("The LCM is: ",num2)
+
+def ex082_1_OR():                   #최소공배수 간단버젼
+    six = 6
+    fourty_five = 45
+    constant_of_BIGGER_number = fourty_five
+
+    while fourty_five % six != 0:
+        fourty_five = fourty_five + constant_of_BIGGER_number
+    print("The LCM is: ", fourty_five)
+
+
+
+def ex082_2(num1, num2):            #최대공약수
+
+    if num1 == 0 or num2 == 0:
+        print("Piss off")
+
+    elif num1 != 0 or num2 != 0:
+        if num1 > num2:
+            num1, num2 = num2, num1
+        
+        const_num = num1
+
+        while const_num % num1 or num2 % num1 != 0:
+            num1 -= 1
+        print("The GCM is: ", num1)
+
+def ex082_2_OR():                   #최대공약수 간단버젼
+    fourty_two = 42
+    one_twenty = 120
+    constant_of_SMALLER_number = fourty_two
+
+    while constant_of_SMALLER_number % fourty_two or one_twenty % fourty_two != 0:
+        fourty_two = fourty_two - 1
+    print("The GCM is: ", fourty_two)
+
+
+
+#ex082_1(6,45)
+#ex082_1_OR() #간단버젼
+
+#ex082_2(42,120)
+#ex082_2_OR() #간단버젼
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
