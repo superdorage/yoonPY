@@ -602,6 +602,111 @@ def ex082_2_OR():                   #최대공약수 간단버젼
 
 
 
+print("CHAPTER 8 EXCERCISES [08-3] : pg.162")
+
+def ex083_1():
+    for i in range(1,10):
+        if 7 * i % 2 != 0:
+            continue
+        else:
+            print(7 * i, end=' ')
+
+def ex083_2():
+    for i in range(2,101):
+        if i % 2 == 0 or i % 3 == 0:
+            continue
+        print(i, end=' ')
+
+def ex083_3():
+    for i in range(2,101):
+        if i % 2 != 0 and i % 3 != 0:
+            print(i, end=' ')
+
+
+
+#ex083_1()
+#ex083_2()
+#ex083_3()
+
+
+
+print("CHAPTER 8 EXCERCISES [08-4] : pg.165")
+
+def ex084():
+    for i in range(2,10):
+        for j in range(1,10):
+            print(i * j, end=' ')
+        print("\r")
+
+#ex084()
+
+
+print("CHAPTER 9 EXCERCISES [09-1] : pg.174")
+
+def ex091():
+    def to_list(obj):
+        listed = []
+        for i in obj:
+            listed[:] += [i]
+        print(listed)
+
+    ds = (1,2,3)
+    ds2 = "hello"
+
+    to_list(ds)
+    to_list(ds2)
+
+#ex091()
+
+
+
+print("CHAPTER 9 EXCERCISES [09-2] : pg.181")
+
+def ex092_1():
+    for i in range(9,0,-1):
+        i *= 7
+        print(i, end=' ')
+
+def ex092_2():
+    x = []
+    y = []
+    
+    for i in range(1,101):
+        x[:] += [i]
+    for j in range(99,0,-1):
+        y[:] += [j]
+            
+
+    print(tuple(x+y))
+
+
+#ex092_1()
+#ex092_2()
+
+
+
+print("CHAPTER 10 EXCERCISES [10-1] : pg.187")
+
+def ex101():
+    for i in range(3):
+        print(i+1, i+2, i+3, sep = ', ', end = ' \n')
+
+
+#ex101()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
