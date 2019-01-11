@@ -696,6 +696,21 @@ def ex101():
 
 
 
+print("CHAPTER 10 EXCERCISES [10-2] : pg.192")
+
+def ex102():
+    st = [1,2,3,4,5]
+
+    def add1(s):
+        for i in s:
+            s[i-1] += 1
+        print(s)
+
+    add1(st)
+
+ex102()
+
+
 
 
 
