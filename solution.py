@@ -708,9 +708,32 @@ def ex102():
 
     add1(st)
 
-ex102()
+#ex102()
 
 
+
+print("CHAPTER 12 EXCERCISES [12-1] : pg.217")
+
+def ex121_1():
+    dc = {
+            'apple' :   700,
+            'orange':   850,
+            'banana':   750
+            }
+    
+    dc['pineapple'] = 900
+
+    print(dc)
+
+def ex121_2():
+
+
+    print(ex121_1.dc)
+
+
+
+#ex121_1()
+ex121_2()
 
 
 
