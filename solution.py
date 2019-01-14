@@ -723,17 +723,28 @@ def ex121_1():
     
     dc['pineapple'] = 900
 
-    print(dc)
+    return dc       #print 함수를 return으로 변경
 
 def ex121_2():
+    x = ex121_1()   #print 함수로 상속시 Type 까지 상속하지 못 함으로 리턴문을 추가 후 객체에 상속
+    for i in x:
+        x[i] += 100
 
+    return x
 
-    print(ex121_1.dc)
-
-
+def ex121_3():
+    x = ex121_1()
+    del x['orange']
+    x['blood orange'] =  950
+    print(x)
 
 #ex121_1()
-ex121_2()
+#ex121_2()
+#ex121_3()
+
+
+
+
 
 
 
