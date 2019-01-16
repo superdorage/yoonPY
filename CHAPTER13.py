@@ -5,60 +5,26 @@
 #################################
 
 
-"""[13-1] Global Variables and Local Variables"""
 
-cnt = 100
+"""[13-8]"""
 
-def func():
-    global cnt
-    cnt = 0
-    print(cnt)
-
-#func()
-#print(cnt)
-
+class Const:
+    def __init__(self, n1, n2):
+        self.n1 = n1
+        self.n2 = n2
+    
+    def show_data(self):
+        print(self.n1, self.n2)
 
 
-"""[13-4]"""
+def main():
+    o1 = Const(1,2)
+    o2 = Const(3,4)
 
-age = 39
+    o1.show_data()
+    o2.show_data()
 
-class AgeInfo:
-    def up_age(self):
-        self.age += 1
+main()
 
-    def get_age(self):
-        return self.age
 
-def main1():
-    fa = AgeInfo()
-    fa.age = 39
-
-    print("2019...")
-    print("father: ", fa.get_age())
-    print("2020...")
-    fa.up_age()
-    print("father: ", fa.get_age())
-
-#main1()
-
-def main2():
-    fa = AgeInfo()
-    mo = AgeInfo()
-    me = AgeInfo()
-
-    fa.age = 39
-    mo.age = 35
-    me.age = 12
-
-    sum = fa.get_age() + mo.get_age() + me.get_age()
-    print("sum of ages: ", sum)
-
-    fa.up_age()
-    mo.up_age()
-    me.up_age()
-    sum = fa.get_age() + mo.get_age() + me.get_age()
-    print("Next year: ", sum)
-
-main2()
 
