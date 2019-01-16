@@ -30,7 +30,7 @@ class AgeInfo:
     def get_age(self):
         return self.age
 
-def main():
+def main1():
     fa = AgeInfo()
     fa.age = 39
 
@@ -40,5 +40,25 @@ def main():
     fa.up_age()
     print("father: ", fa.get_age())
 
-main()
+#main1()
+
+def main2():
+    fa = AgeInfo()
+    mo = AgeInfo()
+    me = AgeInfo()
+
+    fa.age = 39
+    mo.age = 35
+    me.age = 12
+
+    sum = fa.get_age() + mo.get_age() + me.get_age()
+    print("sum of ages: ", sum)
+
+    fa.up_age()
+    mo.up_age()
+    me.up_age()
+    sum = fa.get_age() + mo.get_age() + me.get_age()
+    print("Next year: ", sum)
+
+main2()
 
