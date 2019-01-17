@@ -456,8 +456,59 @@ def ex071_1():
 
     main()
 
-def ex071_2():
-    num 
+def ex071_2(): 
+    num = 3	    num 
+    1 < num and 5 > num	
+    print(bool(num))	
+
+ def ex071_3():	
+    num  = 12	
+    3 < num > 10	
+    print(bool(num))	
+
+ def ex071_4():	
+    num = 4	
+    num % 2 == 0 and not num % 3 == 0	
+    print(bool(num))	
+
+ def ex071_5():	
+    def main():	
+        num = eval(input("Enter a number: "))	
+        if num < 0:	
+            print("The number you've entered is below ZERO")	
+        if 0 <= num <= 10:	
+            print("The number you've entered is above ZERO and below 10")	
+        if 10 <= num <= 20:	
+            print("The number you've entered is above 10 and below 20")	
+        if 20 < num:	
+            print("The number you've entered is over 20")	
+
+     main()	
+
+#ex071_1()	
+#ex071_2()	
+#ex071_3()	
+#ex071_4()	
+#ex071_5()	
+
+
+
+ print("CHAPTER 7 EXCERCISES [07-2] : pg.144")	
+
+ def ex072():	
+    def main():	
+        num = eval(input("Enter a number: "))	
+
+         if int(num) < num:	
+            print("Enter a number without decimal")	
+
+         else:	
+            num = num ** 2	
+            print(num)	
+    main()	
+
+ #ex072()
+
 
 
 
