@@ -457,57 +457,7 @@ def ex071_1():
     main()
 
 def ex071_2():
-    num = 3
-    1 < num and 5 > num
-    print(bool(num))
-
-def ex071_3():
-    num  = 12
-    3 < num > 10
-    print(bool(num))
-
-def ex071_4():
-    num = 4
-    num % 2 == 0 and not num % 3 == 0
-    print(bool(num))
-
-def ex071_5():
-    def main():
-        num = eval(input("Enter a number: "))
-        if num < 0:
-            print("The number you've entered is below ZERO")
-        if 0 <= num <= 10:
-            print("The number you've entered is above ZERO and below 10")
-        if 10 <= num <= 20:
-            print("The number you've entered is above 10 and below 20")
-        if 20 < num:
-            print("The number you've entered is over 20")
-    
-    main()
-
-#ex071_1()
-#ex071_2()
-#ex071_3()
-#ex071_4()
-#ex071_5()
-
-
-
-print("CHAPTER 7 EXCERCISES [07-2] : pg.144")
-
-def ex072():
-    def main():
-        num = eval(input("Enter a number: "))
-        
-        if int(num) < num:
-            print("Enter a number without decimal")
-
-        else:
-            num = num ** 2
-            print(num)
-    main()
-
-#ex072()
+    num 
 
 
 
@@ -744,46 +694,80 @@ def ex121_3():
 
 
 
+print("CHAPTER 13 EXCERCISES [13-1] : pg.243")
 
 
+class Friend:
+    
+    def __init__(self, name, phone):
+        self.name = name
+        self.phone = phone
 
 
+    def get_name(self):
+        print(self.name)
+
+    def get_phone(self):
+        print(self.phone)
+
+    def set_phone(self, phone):
+        self.phone = phone
+        return self.phone
+
+    def show_info(self):
+        return [self.name, self.phone]
+
+def ex131_1():
+    f = Friend('HAHAHA', '010-1111-2222')
+    f.get_name()
+    f.get_phone()
+    f.set_phone('010-2222-3333')
+    print('EX1. : ', 'Name: ', f.name, 'Phone: ', f.phone)
 
 
+def ex131_2():
+    a = Friend('Yoon Jimin', '010-111-222')
+    b = Friend('Lee Sunjoon', '010-333-444')
+    c = Friend('Jang Jiwoo', '010-555-666')
+    d = Friend('Yoon Jiyool', '010-777-888')
+
+    e = [a,b,c,d]
+    
+    for i in e:
+        print(i.name, i.phone)
+
+    return [a.show_info(), b.show_info(), c.show_info(), d.show_info()]
+    
+
+def ex131_3():
+    a = ex131_2()
+    
+    for i in a:
+        if i[0][0] == 'Y':      # .startswith('Yoon') 함수가 작동하지 않음.
+            print('EX3 : ',i)
+
+        else:
+            pass
 
 
+def ex131_4():
+    a = ex131_2()
+
+    for i in a:
+        print('Original', i)
+
+    for i in a:
+        if i[0].startswith('Jang') == True:
+            i[1] = '010-999-999'
+
+    for i in a:
+        print('Updated', i)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#ex131_1()
+#ex131_2()
+#ex131_3()
+#ex131_4()
 
 
 
