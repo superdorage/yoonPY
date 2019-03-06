@@ -28,8 +28,34 @@
     get_name, get_phone, set_phone, show_info
 
 """
+print('문제 1:')
 
+class Friend:
+    def __init__(self, name, phone):
+        self.name = name
+        self.phone = phone
 
+    def get_name(self):
+        return self.name
+
+    def get_phone(self):
+        print(self.phone)
+
+    def set_phone(self, new):
+        self.phone = new
+
+    def show_info(self):
+        print(self.name, self.phone)
+
+def main():
+    f = Friend('홍길동', '010-111-222')
+    f.get_name()
+    f.get_phone()
+    f.set_phone('010-333-444')
+    f.show_info()
+
+main()
+print('\n')
 
 
 
@@ -45,9 +71,17 @@
 그리고 이어서 리스트에 담긴 객체가 지니는 이름과 전화번호 정보를 모두 출력하는 for 루프를 작성해보자.
 
 """
+print('문제 2:')
+a = Friend('윤지민', '010-111-222')
+b = Friend('이선준', '010-333-444')
+c = Friend('장지우', '010-555-666')
+d = Friend('윤지율', '010-777-888')
 
+x = [a,b,c,d]
+for i in x:
+    Friend.show_info(i)
 
-
+print('\n')
 
 
 
@@ -57,10 +91,12 @@
 s.startswith(prefix)    # 문자열 s 가 prefix 로 시작하면 True, 아니면 False 반환
 
 """
+print('문제 3:')
+for i in x:
+    if i.get_name().startswith('윤') == True:
+        Friend.show_info(i)
 
-
-
-
+print('\n')
 
 
 # 4. 리스트에 담긴 객체들 중에서 '장지우' 의 전화번호를 다음과 같이 수정하는 코드를 for 루프를 기반으로 작성해보자.
@@ -70,5 +106,13 @@ s.startswith(prefix)    # 문자열 s 가 prefix 로 시작하면 True, 아니�
 그리고 수정이 끝나면 정상적으로 수정되었는지 확인하기 위해서 '장지우' 의 정보를 찾아서 출력하는 for-loop 를 작성하자.
 
 """
+print('문제 4:')
+for i in x:
+    if '장지우' in i.get_name():
+        i.set_phone('010-999-999')
+    
+for i in x:
+    if '장지우' in i.get_name():
+        Friend.show_info(i)
 
 
